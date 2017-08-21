@@ -51,7 +51,7 @@ class Navigation extends Component {
     return (
       <Navbar full fixed="top" inverse toggleable className="bg-inverse">
         <NavbarToggler right onClick={this.toggleMenu} />
-        <NavbarBrand href="/">My Awesome App</NavbarBrand>
+        <NavbarBrand href="/">Hero Header Demo</NavbarBrand>
         <Collapse isOpen={!this.state.collapsed} navbar>
           <Nav className="ml-auto" navbar>
             {routes.map(route => (
