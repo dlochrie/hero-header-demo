@@ -1,0 +1,8 @@
+.top-channel-infinite-list__waypoint {
+  margin: 40px 0;
+}
+
+.top-channel-infinite-list__waypoint--loading {
+  text-align: center;
+  vertical-align: top;
+}

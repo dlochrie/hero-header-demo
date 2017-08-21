@@ -1,0 +1,19 @@
+.promo-slider h4 {
+  text-align: center;
+}
+
+.promo-slider__img {
+  background-size: over;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 56.25%;
+  width: 100%;
+
+  outline: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}

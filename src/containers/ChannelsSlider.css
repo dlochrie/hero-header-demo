@@ -1,0 +1,24 @@
+.channels-slider {
+  margin: 20px 0 0 0;
+}
+
+.channels-slider__img {
+  padding: 10px;
+  min-height: 0;
+  min-width: 0;
+  width: 100%;
+
+  outline: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+.channels-slider__h2 {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
