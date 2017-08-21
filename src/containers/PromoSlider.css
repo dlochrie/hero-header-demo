@@ -3,11 +3,11 @@
 }
 
 .promo-slider__img {
-  background-size: over;
-  background-repeat: no-repeat;
-  background-position: center;
-
+  display: block;
   height: 56.25%;
+  margin: 0 auto;
+  min-height: 56.25%;
+  min-width: 100%;
   width: 100%;
 
   outline: none;

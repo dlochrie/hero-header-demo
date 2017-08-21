@@ -1,8 +1,13 @@
 import React from 'react';
+import { Col, Row } from 'reactstrap';
 
 const NoHeader = () => (
-  <div id="no-header">
-    <h1>Nothing here yet!!!</h1>
+  <div>
+    <Row>
+      <Col sm={{ size: '10', offset: 1 }} xs="12">
+        <h1><em>No Header</em></h1>
+      </Col>
+    </Row>
   </div>
 );
 

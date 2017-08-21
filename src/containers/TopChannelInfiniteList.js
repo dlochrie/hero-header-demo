@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Col, Row } from 'reactstrap';
 import Waypoint from 'react-waypoint';
 
 import ChannelsSlider from './ChannelsSlider';
@@ -74,7 +75,13 @@ class TopChannelInfiniteList extends Component {
         onEnter={this.handleScrollEnter}
         onLeave={this.handleScrollLeave}
       >
-        <div className="top-channel-infinite-list__waypoint-loading">{ available.length ? 'Loading' : null }</div>
+        <div>
+          <Row>
+            <Col sm={{ size: '10', offset: 1 }} xs="12">
+              <div className="top-channel-infinite-list__waypoint-loading">{ available.length ? 'Loading' : null }</div>
+            </Col>
+          </Row>
+        </div>
       </Waypoint>
     );
   }
