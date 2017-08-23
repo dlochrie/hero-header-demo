@@ -4,11 +4,13 @@ import ReactRouterPropTypes from 'react-router-prop-types';
 
 import FSImage from './FSImage';
 import FSVideo from './FSVideo';
+import FSVideoCarousel from './FSVideoCarousel';
 import NoHeader from './NoHeader';
 import TopChannelInfiniteList from '../containers/TopChannelInfiniteList';
 
 const variants = {
   'fs-video': <FSVideo />,
+  'fs-video-carousel': <FSVideoCarousel />,
   'fs-image': <FSImage />,
   nothing: <NoHeader />,
 };

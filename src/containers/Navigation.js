@@ -2,19 +2,7 @@ import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
-const routes = [{
-  path: '/',
-  title: 'Home',
-}, {
-  path: '/variants/fs-video',
-  title: 'Full Screen Video',
-}, {
-  path: '/variants/fs-image',
-  title: 'Full Screen Image',
-}, {
-  path: '/variants/nothing',
-  title: 'No Header',
-}];
+import { routes } from '../common/constants';
 
 class Navigation extends Component {
   constructor(props) {
