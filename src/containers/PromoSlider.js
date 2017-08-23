@@ -43,7 +43,6 @@ class PromoSlider extends Component {
             img.addEventListener('load', () => {
               loadedImgs += 1;
               if (loadedImgs === imgs.length) {
-                console.log('Adapting Height!!!');
                 this.node.innerSlider.adaptHeight();
               }
             });
