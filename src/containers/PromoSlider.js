@@ -35,6 +35,19 @@ class PromoSlider extends Component {
           this.setState({
             sliders: responseJson.items,
           });
+
+          const parentEl = document.getElementById('promo-slider');
+          const imgs = parentEl ? parentEl.querySelectorAll('img') : [];
+          let loadedImgs = 0;
+          imgs.forEach((img) => {
+            img.addEventListener('load', () => {
+              loadedImgs += 1;
+              if (loadedImgs === imgs.length) {
+                console.log('Adapting Height!!!');
+                this.node.innerSlider.adaptHeight();
+              }
+            });
+          });
         });
   }
 
@@ -42,7 +55,7 @@ class PromoSlider extends Component {
     const promos = this.state.sliders;
 
     return (
-      <Row>
+      <Row id="promo-slider">
         <Col sm={{ size: '10', offset: 1 }} xs="12">
           {promos && promos.length ?
             <Slider {...sliderSettings} ref={(node) => { this.node = node; }}>

@@ -13,7 +13,7 @@ import Variants from './Variants';
 import './App.css';
 
 const App = () => (
-  <Router>
+  <Router basename="/hero-header-demo">
     <ScrollToTop>
       <Navigation />
       <Container fluid>

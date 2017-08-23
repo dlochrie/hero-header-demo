@@ -1,14 +1,19 @@
+.promo-slider {
+  display: block;
+  height: 56.25%;
+  width: 100%;
+}
+
 .promo-slider h4 {
   text-align: center;
 }
 
 .promo-slider__img {
   display: block;
-  height: 56.25%;
   margin: 0 auto;
-  min-height: 56.25%;
-  min-width: 100%;
+  height: 56.25%;
   width: 100%;
+  object-fit: contain;
 
   outline: none;
   -webkit-user-drag: none;
