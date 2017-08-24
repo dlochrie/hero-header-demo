@@ -56,7 +56,7 @@ class PromoSlider extends Component {
 
   setSource(index = 0) {
     const videos = this.state.videos;
-    const parentEl = document.getElementById('promo-slider');
+    const parentEl = document.querySelector('.promo-slider');
     const slideEls = parentEl.querySelectorAll('.slick-slide');
     slideEls.forEach((slideEl) => {
       const iframe = slideEl.querySelector('iframe');
@@ -72,17 +72,19 @@ class PromoSlider extends Component {
     const videos = this.state.videos;
 
     return (
-      <Row id="promo-slider">
+      <Row>
         <Col sm={{ size: '10', offset: 1 }} xs="12">
-          {videos && videos.length ?
-            <Slider {...this.sliderSettings} ref={(node) => { this.node = node; }}>
-              {videos.map(item => (
-                <div className="promo-slider" key={item.id}>
-                  <div id="hero-movie">{item.iframe}</div>
-                </div>
-              ))}
-            </Slider>
-            : null}
+          <div className="promo-slider">
+            {videos && videos.length ?
+              <Slider {...this.sliderSettings} ref={(node) => { this.node = node; }}>
+                {videos.map(item => (
+                  <div key={item.id}>
+                    <div id="hero-movie">{item.iframe}</div>
+                  </div>
+                ))}
+              </Slider>
+              : null}
+          </div>
         </Col>
       </Row>
     );

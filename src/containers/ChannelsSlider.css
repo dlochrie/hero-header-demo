@@ -1,5 +1,7 @@
 .channels-slider {
-  margin: 20px 0 0 0;
+  margin: 20px auto 0;
+  padding: 0 30px;
+  width: 100%;
 }
 
 .channels-slider__img {

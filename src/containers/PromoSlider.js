@@ -54,22 +54,24 @@ class PromoSlider extends Component {
     const promos = this.state.sliders;
 
     return (
-      <Row id="promo-slider">
+      <Row>
         <Col sm={{ size: '10', offset: 1 }} xs="12">
-          {promos && promos.length ?
-            <Slider {...sliderSettings} ref={(node) => { this.node = node; }}>
-              {promos.map(item => (
-                <div className="promo-slider" key={item.id}>
-                  <img
-                    src={`${thumbPathLg}${item.id}`}
-                    alt={item.name}
-                    className="promo-slider__img"
-                  />
-                  <h4>{item.name}</h4>
-                </div>
+          <div className="promo-slider">
+            {promos && promos.length ?
+              <Slider {...sliderSettings} ref={(node) => { this.node = node; }}>
+                {promos.map(item => (
+                  <div className="promo-slider" key={item.id}>
+                    <img
+                      src={`${thumbPathLg}${item.id}`}
+                      alt={item.name}
+                      className="promo-slider__img"
+                    />
+                    <h4>{item.name}</h4>
+                  </div>
               ))}
-            </Slider>
+              </Slider>
             : null}
+          </div>
         </Col>
       </Row>
     );
