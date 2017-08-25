@@ -77,7 +77,7 @@ class TopChannelInfiniteList extends Component {
       >
         <div>
           <Row>
-            <Col sm={{ size: '10', offset: 1 }} xs="12">
+            <Col xs="12">
               <div className="top-channel-infinite-list__waypoint-loading">{ available.length ? 'Loading' : null }</div>
             </Col>
           </Row>

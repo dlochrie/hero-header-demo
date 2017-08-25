@@ -54,8 +54,8 @@ class PromoSlider extends Component {
     const promos = this.state.sliders;
 
     return (
-      <Row>
-        <Col sm={{ size: '10', offset: 1 }} xs="12">
+      <Row className="justify-content-md-center">
+        <Col xs="12">
           <div className="promo-slider">
             {promos && promos.length ?
               <Slider {...sliderSettings} ref={(node) => { this.node = node; }}>

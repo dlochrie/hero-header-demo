@@ -37,9 +37,9 @@ class Navigation extends Component {
 
   render() {
     return (
-      <Navbar full fixed="top" inverse toggleable className="bg-inverse">
-        <NavbarToggler right onClick={this.toggleMenu} />
+      <Navbar full fixed="top" toggleable className="bg-dark navbar-dark navbar-expand-md">
         <NavbarBrand href="/">Hero Header Demo</NavbarBrand>
+        <NavbarToggler right onClick={this.toggleMenu} />
         <Collapse isOpen={!this.state.collapsed} navbar>
           <Nav className="ml-auto" navbar>
             {routes.map(route => (

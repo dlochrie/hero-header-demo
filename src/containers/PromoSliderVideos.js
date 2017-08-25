@@ -72,8 +72,8 @@ class PromoSlider extends Component {
     const videos = this.state.videos;
 
     return (
-      <Row>
-        <Col sm={{ size: '10', offset: 1 }} xs="12">
+      <Row className="justify-content-md-center">
+        <Col xs="12">
           <div className="promo-slider">
             {videos && videos.length ?
               <Slider {...this.sliderSettings} ref={(node) => { this.node = node; }}>
