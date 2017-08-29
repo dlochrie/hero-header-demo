@@ -1,0 +1,13 @@
+.verticalPlaylist {
+  height: 100%;
+  overflow: hidden;
+}
+
+.verticalPlaylist iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.verticalPlaylist img {
+  width: 100%;
+}

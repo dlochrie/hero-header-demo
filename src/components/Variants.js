@@ -6,12 +6,14 @@ import FSImage from './FSImage';
 import FSVideo from './FSVideo';
 import FSVideoCarousel from './FSVideoCarousel';
 import NoHeader from './NoHeader';
+import SidePlaylist from './SidePlaylist';
 import TopChannelInfiniteList from '../containers/TopChannelInfiniteList';
 
 const variants = {
   'fs-video': <FSVideo />,
   'fs-video-carousel': <FSVideoCarousel />,
   'fs-image': <FSImage />,
+  'side-playlist': <SidePlaylist />,
   nothing: <NoHeader />,
 };
 

@@ -10,6 +10,9 @@ export const routes = [{
   path: '/',
   title: 'Home',
 }, {
+  path: '/variants/side-playlist',
+  title: 'Side Playlist',
+}, {
   path: '/variants/fs-video',
   title: 'Full Screen Video',
 }, {
