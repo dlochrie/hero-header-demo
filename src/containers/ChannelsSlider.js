@@ -71,8 +71,8 @@ class ChannelsSlider extends Component {
     const roundedFetchTime = Math.round(fetchTime * 100) / 100;
 
     return (
-      <Row>
-        <Col sm={{ size: '10', offset: 1 }} xs="12">
+      <Row className="justify-content-md-center">
+        <Col sm="10" xs="12">
           {channelData.items && channelData.items.length ?
             <div id={this.props.channelId} className="channels-slider">
               <h2 className="channels-slider__h2">{channelData.info.name}</h2>
